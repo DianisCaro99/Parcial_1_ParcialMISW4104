@@ -1,0 +1,24 @@
+.h1{
+    font-family: 'Jaldi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 61px;
+    color: #000000;
+}
+
+.footer-text{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+.initial-div{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
