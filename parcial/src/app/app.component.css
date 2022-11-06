@@ -17,8 +17,12 @@
     color: #000000;
 }
 
+footer{
+    padding-top: 10px;
+}
+
 .initial-div{
     margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
