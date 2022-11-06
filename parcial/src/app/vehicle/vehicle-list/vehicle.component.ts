@@ -14,11 +14,31 @@ export class VehicleListComponent implements OnInit {
     private router: ActivatedRoute, private routerPath: Router) { }
 
     vehicles: Array<Vehicle> = [];
+    total_nissan?: number;
+    total_chevrolet?: number;
+    total_renault?: number;
 
   getVehicles(): void{
     this.vehicleService.getVehicles().subscribe((vehicles)=> {
       this.vehicles = vehicles;
+      this.total_nissan = this.countMarca('Nissan');
+      this.total_chevrolet = this.countMarca('Chevrolet');
+      this.total_renault = this.countMarca('Renault');
     })
+
+  }
+
+  countMarca(type: string): number{
+    let total = 0;
+    console.log('entro')
+    console.log(this.vehicles.length)
+    for (var vehicle of this.vehicles) {
+      if(vehicle.marca===type)
+      {
+        total++;
+      }
+    }
+    return total
   }
 
   ngOnInit() {
