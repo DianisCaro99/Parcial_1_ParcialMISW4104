@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VehicleListComponent } from './vehicle-list/vehicle.component';
+import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({

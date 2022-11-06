@@ -30,8 +30,6 @@ export class VehicleListComponent implements OnInit {
 
   countMarca(type: string): number{
     let total = 0;
-    console.log('entro')
-    console.log(this.vehicles.length)
     for (var vehicle of this.vehicles) {
       if(vehicle.marca===type)
       {
